@@ -28,7 +28,7 @@
   font-weight: 400;
   color: white;
   text-align: center;
-  font-size: 48px;
+  font-size: 6vh;
 }
 
 .item-container {
@@ -44,7 +44,7 @@
 
 .item-card {
   width: 300px;
-  height: 200px;
+  height: 250px;
   background-color: white;
   font-family: "Saira Extra Condensed", sans-serif;
   padding: 10px;
@@ -69,17 +69,23 @@
   align-items: space-between;
 }
 
-.item-info img {
-  height: 80%;
-  width: 50%;
+.item-photo {
+  height: 120px;
+  width: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
   border: 1px solid #707070;
-  object-fit: cover;
+}
+
+.item-photo img {
+  height: 120px;
 }
 
 .item-details {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 50%;
 }
@@ -121,16 +127,22 @@
 }
 
 @media (min-width: 700px) {
+  .main-title {
+    font-size: 8vh;
+  }
+
   .item-container {
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 30px;
     justify-content: center;
   }
 
   .item-card {
-    margin: 20px;
+    margin: 0;
     height: 350px;
-    width: 300px;
+    width: 250px;
     justify-content: flex-start;
     position: relative;
   }
@@ -138,12 +150,16 @@
   .item-info {
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
   }
 
-  .item-info img {
-    height: auto;
-    width: 90%;
-    border: 1px solid #707070;
+  .item-photo {
+    height: 150px;
+    width: 200px;
+  }
+
+  .item-photo img {
+    height: 150px;
   }
 
   .item-details {
@@ -152,11 +168,17 @@
   }
 
   .item-description {
-    margin-top: 10px;
+    margin: 15px 3px 0 3px;
   }
 
   .quantity-container {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
+  }
+}
+
+@media (min-width: 700px) and (orientation: landscape) {
+  .header {
+    justify-content: center;
   }
 }

@@ -11,7 +11,9 @@ export const ItemCard = ({ name, price, image, description }) => {
         </span>
       </h2>
       <div className="item-info">
-        <img src={image} alt={name}></img>
+        <div className="item-photo">
+          <img src={image} alt={name}></img>
+        </div>
         <div className="item-details">
           <p className="item-description">{description}</p>
           <div className="quantity-container">
