@@ -48,9 +48,10 @@
 }
 
 .shopping-basket-btn-container {
+  --shopping-basket-btn-size: 8vh;
   position: absolute;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: var(--shopping-basket-btn-size);
+  width: var(--shopping-basket-btn-size);
   right: 0.5rem;
 }
 
@@ -61,26 +62,25 @@
 
 .shopping-basket-btn:hover {
   cursor: pointer;
-  transform: scale(1.1);
 }
 
 .cake-icon {
-  height: 2rem;
+  height: var(--shopping-basket-btn-size);
 }
 
 .shopping-basket-notification {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: calc(var(--shopping-basket-btn-size) / 2);
+  width: calc(var(--shopping-basket-btn-size) / 2);
   border-radius: 50%;
   background-color: var(--secondary-colour);
   font-family: var(--secondary-font);
   text-align: center;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: calc(var(--shopping-basket-btn-size) / 3);
+  line-height: calc(var(--shopping-basket-btn-size) / 2);
   color: white;
   position: absolute;
-  bottom: 0px;
-  left: 1.25rem;
+  bottom: calc(var(--shopping-basket-btn-size) * 0.05);
+  left: calc(var(--shopping-basket-btn-size) / 2);
 }
 
 /* Item Card */
@@ -333,7 +333,7 @@
   }
 
   .shopping-basket-btn-container {
-    right: 4rem;
+    right: 2rem;
   }
 
   .shopping-basket {
@@ -402,6 +402,10 @@
 
   .main-title {
     font-size: 10vh;
+  }
+
+  .shopping-basket-btn-container {
+    --shopping-basket-btn-size: 10vh;
   }
 
   .item-container {

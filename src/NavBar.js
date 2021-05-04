@@ -1,5 +1,5 @@
 import React from "react";
-import CakeIcon from "./images/cake_icon.png";
+import CakeIcon from "./images/cake_white_48dp.svg";
 
 export const NavBar = ({ toggleBasketOpen }) => {
   return (
@@ -12,8 +12,8 @@ export const NavBar = ({ toggleBasketOpen }) => {
           aria-label="Shopping Basket"
         >
           <img src={CakeIcon} alt="cake" className="cake-icon" />
+          <div className="shopping-basket-notification">0</div>
         </button>
-        <div className="shopping-basket-notification">0</div>
       </div>
     </nav>
   );
