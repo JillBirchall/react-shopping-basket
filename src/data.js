@@ -11,7 +11,7 @@ import BlueberryCake from "./images/blueberry-cake.jpg";
 import RingDoughnut from "./images/ring-doughnut.jpg";
 import StrawberryDoughnut from "./images/strawberry-doughnut.jpg";
 
-export default [
+const Cakes = [
   {
     id: 1,
     name: "Strawberry Cake (slice)",
@@ -93,7 +93,7 @@ export default [
   {
     id: 11,
     name: "Ring Doughnut",
-    price: 1.99,
+    price: 1.49,
     image: RingDoughnut,
     description: "A ring doughnut sprinkled with sugar and cinnamon",
   },
@@ -106,3 +106,5 @@ export default [
       "A doughnut filled with strawberry jam, topped with strawberries",
   },
 ];
+
+export default Cakes;
