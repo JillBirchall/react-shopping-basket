@@ -14,26 +14,27 @@ import StrawberryDoughnut from "./images/strawberry-doughnut.jpg";
 const Cakes = [
   {
     id: 1,
-    name: "Strawberry Cake (slice)",
+    name: "Strawberry Cake",
     price: 2.99,
     image: StrawberryCake,
     description:
-      "A sponge cake with a layer of buttercream, topped with strawberries, garnished with mint",
+      "A slice of sponge cake with a layer of buttercream, topped with strawberries, garnished with mint",
   },
   {
     id: 2,
-    name: "Tiramisu (slice)",
+    name: "Tiramisu",
     price: 2.99,
     image: Tiramisu,
-    description: "A coffee flavoured cake, layered with mascarpone and cocoa",
+    description:
+      "A slice of coffee flavoured cake, layered with mascarpone and cocoa",
   },
   {
     id: 3,
-    name: "Churros (5 pieces)",
+    name: "Churros",
     price: 3.99,
     image: Churros,
     description:
-      "Fried dough sticks, sprinkled with cinnamon, served with a chocolate dip",
+      "Five fried dough sticks, sprinkled with cinnamon, served with a chocolate dip",
   },
   {
     id: 4,
@@ -68,7 +69,7 @@ const Cakes = [
   },
   {
     id: 8,
-    name: "Macaroon (6 pieces)",
+    name: "Macaroon",
     price: 5.99,
     image: Macaroons,
     description:
