@@ -4,6 +4,7 @@ import reducer from "./reducer";
 const AppContext = React.createContext();
 
 const initialState = {
+  cakes: [],
   shoppingBasket: [],
   total: 0,
   numberOfItems: 0,
@@ -36,6 +37,10 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     dispatch({ type: "UPDATE_TOTALS" });
   }, [state.shoppingBasket]);
+
+  useEffect(() => {
+    dispatch({ type: "GET_CAKES" });
+  }, []);
 
   return (
     <AppContext.Provider

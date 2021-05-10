@@ -3,24 +3,25 @@ import "./App.css";
 import { ItemCard } from "./ItemCard";
 import { ShoppingBasket } from "./ShoppingBasket";
 import { NavBar } from "./NavBar";
-import Cakes from "./data";
+import { useGlobalContext } from "./context";
 
 function App() {
-  const [cakes, setCakes] = useState(Cakes);
+  const { cakes } = useGlobalContext();
 
   return (
     <div className="main-container">
       <NavBar />
       <ShoppingBasket />
       <main className="item-container">
-        {cakes.map((item) => {
+        {cakes.map((cake) => {
           return (
             <ItemCard
-              name={item.name}
-              key={item.id}
-              description={item.description}
-              image={item.image}
-              price={item.price}
+              name={cake.name}
+              key={cake.id}
+              description={cake.description}
+              image={cake.image}
+              price={cake.price}
+              quantity={cake.qty}
             />
           );
         })}

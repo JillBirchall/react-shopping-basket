@@ -1,8 +1,8 @@
 import React from "react";
 import { useGlobalContext } from "./context";
 
-export const ItemCard = ({ name, price, image, description }) => {
-  const { addItem } = useGlobalContext();
+export const ItemCard = ({ name, price, image, description, quantity }) => {
+  const { addItem, increment, decrement } = useGlobalContext();
 
   return (
     <div className="item-card">
@@ -19,12 +19,24 @@ export const ItemCard = ({ name, price, image, description }) => {
         </div>
         <div className="item-details">
           <p className="item-description">{description}</p>
-          <div
-            className="add-to-basket-btn"
-            onClick={() => addItem(name, price)}
-          >
-            Add To Basket
-          </div>
+          {quantity > 0 ? (
+            <div className="item-quantity-btns">
+              <button className="item-qty-btn" onClick={() => decrement(name)}>
+                &#8722;
+              </button>
+              <div className="item-qty-text">{quantity || 0}</div>
+              <button className="item-qty-btn" onClick={() => increment(name)}>
+                &#43;
+              </button>
+            </div>
+          ) : (
+            <div
+              className="add-to-basket-btn"
+              onClick={() => addItem(name, price)}
+            >
+              Add To Basket
+            </div>
+          )}
         </div>
       </div>
     </div>

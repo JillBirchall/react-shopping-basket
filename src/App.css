@@ -121,7 +121,7 @@
 
 .item-info {
   display: flex;
-  align-items: space-between;
+  align-items: flex-start;
 }
 
 .item-photo {
@@ -140,17 +140,18 @@
 .item-details {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 50%;
+  height: 100%;
 }
 
 .item-description {
   line-height: 100%;
   text-align: center;
   margin-left: 5px;
-  margin-bottom: 20px;
-  font-size: px;
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 
 .add-to-basket-btn {
@@ -167,6 +168,37 @@
 .add-to-basket-btn:hover {
   cursor: pointer;
   background-color: var(--primary-colour);
+}
+
+.item-quantity-btns {
+  width: 100px;
+  height: 30px;
+  border: 1px solid var(--secondary-colour);
+  box-sizing: content-box;
+  display: flex;
+  border-radius: 5%;
+}
+
+.item-qty-btn {
+  width: 35%;
+  height: 100%;
+  border: none;
+  font-size: 24px;
+  background-color: var(--secondary-colour);
+  color: white;
+}
+
+.item-qty-btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-colour);
+}
+
+.item-qty-text {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 /* Shopping Basket */
@@ -383,6 +415,7 @@
 
   .item-details {
     width: 100%;
+    height: auto;
   }
 
   .item-description {
@@ -393,6 +426,11 @@
   .add-to-basket-btn {
     width: 150px;
     font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .item-quantity-btns {
     position: absolute;
     bottom: 10px;
   }
