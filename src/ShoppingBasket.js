@@ -38,9 +38,9 @@ export const ShoppingBasket = ({ toggleBasket }) => {
           <p>Total</p>
           <p className="total-amount">{formatToCurrency(total)}</p>
         </div>
-        {numberOfItems > 0 && (
+        {/* {numberOfItems > 0 && (
           <button className="checkout-btn">Checkout</button>
-        )}
+        )} */}
       </div>
     </>
   );
