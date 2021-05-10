@@ -1,20 +1,37 @@
 import React from "react";
+import { useGlobalContext } from "./context";
+import formatToCurrency from "./utils";
 
-export const ShoppingBasketItem = () => {
+export const ShoppingBasketItem = ({ itemName, subtotal, qty }) => {
+  const { removeItem, increment, decrement } = useGlobalContext();
+
   return (
     <div className="shopping-basket-item">
-      <p>Strawberry Cake</p>
+      <p className="shopping-basket-item-name">{itemName}</p>
       <div className="shopping-basket-qty-container">
         <div className="shopping-basket-qty-adjust">
-          <button className="shopping-basket-qty-btn">&#60;</button>
-          <span className="shopping-basket-qty-number">1</span>
-          <button className="shopping-basket-qty-btn">&#62;</button>
+          <button
+            className="shopping-basket-qty-btn"
+            onClick={() => decrement(itemName)}
+          >
+            &#60;
+          </button>
+          <span className="shopping-basket-qty-number">{qty}</span>
+          <button
+            className="shopping-basket-qty-btn"
+            onClick={() => increment(itemName)}
+          >
+            &#62;
+          </button>
         </div>
-        <button className="remove-item-btn">remove</button>
+        <button
+          className="remove-item-btn"
+          onClick={() => removeItem(itemName)}
+        >
+          remove
+        </button>
       </div>
-      <p className="item-subtotal">
-        £<span>2.99</span>
-      </p>
+      <p className="item-subtotal">{formatToCurrency(subtotal)}</p>
     </div>
   );
 };

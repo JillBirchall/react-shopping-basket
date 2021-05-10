@@ -7,16 +7,11 @@ import Cakes from "./data";
 
 function App() {
   const [cakes, setCakes] = useState(Cakes);
-  const [isBasketOpen, setIsBasketOpen] = useState(false);
-
-  function toggleBasketOpen() {
-    setIsBasketOpen(!isBasketOpen);
-  }
 
   return (
     <div className="main-container">
-      <NavBar toggleBasketOpen={toggleBasketOpen} />
-      {isBasketOpen && <ShoppingBasket />}
+      <NavBar />
+      <ShoppingBasket />
       <main className="item-container">
         {cakes.map((item) => {
           return (
