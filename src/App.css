@@ -395,6 +395,7 @@
     width: var(--card-width);
     justify-content: flex-start;
     position: relative;
+    margin: 0;
   }
 
   .item-info {
