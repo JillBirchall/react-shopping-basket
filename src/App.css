@@ -105,7 +105,7 @@
   padding: 10px;
   border: 1px solid var(--primary-colour);
   border-radius: 15px;
-  margin-top: 10px;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -384,8 +384,13 @@
     justify-content: center;
   }
 
+  /* Workaround to add margin to the bottom of the grid */
+  .item-container:after {
+    content: "";
+    height: 10px;
+  }
+
   .item-card {
-    margin: 0;
     height: 360px;
     width: var(--card-width);
     justify-content: flex-start;
@@ -459,6 +464,12 @@
     grid-template-columns: repeat(auto-fill, var(--card-width));
     gap: 10px;
     justify-content: center;
+  }
+
+  /* Workaround to add margin to the bottom of the grid */
+  .item-container:after {
+    content: "";
+    height: 20px;
   }
 
   .item-card {
