@@ -21,14 +21,14 @@ I created this project to further practice using the useContext and useReducer h
 
 All photographs used in this project are taken from [Pixabay](https://pixabay.com/). These photos were taken by the following Pixabay users:
 
-Strawberry Cake, Tiramisu, Churros: Daria-Yakovleva
-Cupcakes: LAWJR
-Macaroons, Blueberry Cake, Raspberry Tart: Pexels
-Wild Berry Cupcake: RitaE
-Cream Puff: la-fontaine
-Ring Doughnuts: dinesh220185
-Oreo Doughnut, Strawberry Doughnut: dinar-aulia
-Background Image: JillWellington
+* Strawberry Cake, Tiramisu, Churros: [Daria-Yakovleva](https://pixabay.com/users/daria-yakovleva-3938704/)
+* Cupcakes: [LAWJR](https://pixabay.com/users/lawjr-4448871/)
+* Macaroons, Blueberry Cake, Raspberry Tart: [Pexels](https://pixabay.com/users/pexels-2286921/)
+* Wild Berry Cupcake: [RitaE](https://pixabay.com/users/ritae-19628/)
+* Cream Puff: [la-fontaine](http://pixabay.com/users/la-fontaine-22289/)
+* Ring Doughnuts: [dinesh220185](https://pixabay.com/users/dinesh220185-5663100/)
+* Oreo Doughnut, Strawberry Doughnut: [dinar-aulia](https://pixabay.com/users/dinar_aulia-17727446/)
+* Background Image: [JillWellington](https://pixabay.com/users/jillwellington-334088/)
 
 # Getting Started with Create React App
 
