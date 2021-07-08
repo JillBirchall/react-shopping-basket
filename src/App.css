@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  position: relative;
+  position: fixed;
   z-index: 9999;
 }
 
@@ -83,6 +83,7 @@
 /* Item Card */
 
 .item-container {
+  margin-top: 10vh;
   height: 90vh;
   width: 100%;
   display: flex;
@@ -445,6 +446,8 @@
   }
 
   .item-container {
+    height: 85vh;
+    margin-top: 15vh;
     --card-width: 300px;
     padding: 10px;
     display: grid;
@@ -465,7 +468,7 @@
   }
 
   .shopping-basket-background {
-    height: 85vh;
+    height: 100vh;
   }
 
   .shopping-basket {
