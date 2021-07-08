@@ -23,7 +23,7 @@
   background-size: cover;
   position: relative;
   text-transform: uppercase;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Header */
