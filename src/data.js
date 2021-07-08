@@ -3,7 +3,7 @@ import Tiramisu from "./images/tiramisu.jpg";
 import Churros from "./images/churros.jpg";
 import Cupcake from "./images/cupcakes.jpg";
 import RaspberryTart from "./images/raspberry-tart.jpg";
-import OreoDoughnut from "./images/oreo-doughnut.jpg";
+import CookieDoughnut from "./images/cookie-doughnut.jpg";
 import WildBerryCupcake from "./images/wild-berry-cupcake.jpg";
 import Macaroons from "./images/macaroons.jpg";
 import CreamPuff from "./images/cream-puffs.jpg";
@@ -53,9 +53,9 @@ const Cakes = [
   },
   {
     id: 6,
-    name: "Oreo Doughnut",
+    name: "Cookie Doughnut",
     price: 2.99,
-    image: OreoDoughnut,
+    image: CookieDoughnut,
     description:
       "A doughnut filled with chocolate, topped with caramel icing, cocoa and an oreo biscuit",
   },
