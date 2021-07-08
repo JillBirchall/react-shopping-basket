@@ -17,7 +17,7 @@ I created this project to further practice using the useContext and useReducer h
 
 - Add a fade-out animation when the shopping basket is closed.
 
-## Photograph Attributions
+## Photograph and Icon Attributions
 
 All photographs used in this project are taken from [Pixabay](https://pixabay.com/). These photos were taken by the following Pixabay users:
 
@@ -29,6 +29,8 @@ All photographs used in this project are taken from [Pixabay](https://pixabay.co
 - Ring Doughnuts: [dinesh220185](https://pixabay.com/users/dinesh220185-5663100/)
 - Oreo Doughnut, Strawberry Doughnut: [dinar-aulia](https://pixabay.com/users/dinar_aulia-17727446/)
 - Background Image: [JillWellington](https://pixabay.com/users/jillwellington-334088/)
+
+The cake icon used for the shopping basket is taken from Google Material Design Icons.
 
 # Getting Started with Create React App
 
