@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import { ItemCard } from "./ItemCard";
 import { ShoppingBasket } from "./ShoppingBasket";

@@ -61,10 +61,6 @@
   background-color: transparent;
 }
 
-.shopping-basket-btn:hover {
-  cursor: pointer;
-}
-
 .cake-icon {
   height: var(--shopping-basket-btn-size);
 }
@@ -165,11 +161,6 @@
   line-height: 30px;
 }
 
-.add-to-basket-btn:hover {
-  cursor: pointer;
-  background-color: var(--primary-colour);
-}
-
 .item-quantity-btns {
   width: 100px;
   height: 30px;
@@ -186,11 +177,6 @@
   font-size: 24px;
   background-color: var(--secondary-colour);
   color: white;
-}
-
-.item-qty-btn:hover {
-  cursor: pointer;
-  background-color: var(--primary-colour);
 }
 
 .item-qty-text {
@@ -307,23 +293,11 @@
   color: var(--primary-colour);
 }
 
-.shopping-basket-qty-btn:hover {
-  cursor: pointer;
-  font-weight: bold;
-  color: var(--secondary-colour);
-}
-
 .remove-item-btn {
   border: none;
   background-color: transparent;
   font-family: var(--secondary-font);
   font-size: 14px;
-}
-
-.remove-item-btn:hover {
-  cursor: pointer;
-  color: var(--primary-colour);
-  font-weight: bold;
 }
 
 .item-subtotal {
@@ -356,9 +330,38 @@
   text-transform: uppercase;
 }
 
-.checkout-btn:hover {
-  cursor: pointer;
-  background-color: var(--primary-colour);
+/* Hover effects for devices that support hover */
+@media (hover: hover) {
+  .shopping-basket-btn:hover {
+    cursor: pointer;
+  }
+
+  .add-to-basket-btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-colour);
+  }
+
+  .item-qty-btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-colour);
+  }
+
+  .shopping-basket-qty-btn:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--secondary-colour);
+  }
+
+  .remove-item-btn:hover {
+    cursor: pointer;
+    color: var(--primary-colour);
+    font-weight: bold;
+  }
+
+  .checkout-btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-colour);
+  }
 }
 
 /* Large Screens */
