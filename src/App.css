@@ -201,6 +201,7 @@
   right: 0;
   display: none;
   position: fixed;
+  overflow-y: hidden;
 }
 
 .show-shopping-basket-background {
