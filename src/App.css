@@ -51,7 +51,7 @@
 
 .shopping-basket-btn-container {
   --shopping-basket-btn-size: 8vh;
-  position: absolute;
+  position: fixed;
   height: var(--shopping-basket-btn-size);
   width: var(--shopping-basket-btn-size);
   right: 0.5rem;
@@ -224,7 +224,7 @@
   width: var(--shopping-basket-width);
   z-index: 2;
   background-color: white;
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 0px;
   display: flex;
@@ -451,7 +451,7 @@
   }
 
   .shopping-basket-btn-container {
-    --shopping-basket-btn-size: 10%;
+    --shopping-basket-btn-size: 10vh;
   }
 
   .item-container {
@@ -477,7 +477,7 @@
   }
 
   .shopping-basket-background {
-    height: 100%;
+    height: 85%;
   }
 
   .shopping-basket {
