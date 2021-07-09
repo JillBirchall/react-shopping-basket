@@ -192,7 +192,7 @@
 /* Shopping Basket */
 
 .shopping-basket-background {
-  height: 90vh;
+  height: 90%;
   width: 100%;
   z-index: 1;
   background-color: black;
@@ -218,8 +218,8 @@
 }
 
 .shopping-basket {
-  --shopping-basket-height: 90vh;
-  --shopping-basket-width: 100vw;
+  --shopping-basket-height: 90%;
+  --shopping-basket-width: 100%;
   height: var(--shopping-basket-height);
   width: var(--shopping-basket-width);
   z-index: 2;
@@ -234,10 +234,18 @@
   font-family: var(--main-font);
   transform: translateY(calc(var(--shopping-basket-height) * -1));
   transition: transform 0.5s linear;
+  -webkit-transition: transform 0.5s linear;
+  -moz-transition: transform 0.5s linear;
+  -ms-transition: transform 0.5s linear;
+  -o-transition: transform 0.5s linear;
 }
 
 .show-shopping-basket {
-  transform: translateY(calc(100vh - var(--shopping-basket-height)));
+  transform: translateY(calc(100% - var(--shopping-basket-height)));
+  -webkit-transform: translateY(calc(100% - var(--shopping-basket-height)));
+  -moz-transform: translateY(calc(100% - var(--shopping-basket-height)));
+  -ms-transform: translateY(calc(100% - var(--shopping-basket-height)));
+  -o-transform: translateY(calc(100% - var(--shopping-basket-height)));
 }
 
 .shopping-basket h1 {
@@ -435,7 +443,7 @@
 /* Small Devices in landscape */
 @media (max-height: 500px) and (orientation: landscape) {
   .nav-bar {
-    height: 15vh;
+    height: 15%;
   }
 
   .main-title {
@@ -443,12 +451,12 @@
   }
 
   .shopping-basket-btn-container {
-    --shopping-basket-btn-size: 10vh;
+    --shopping-basket-btn-size: 10%;
   }
 
   .item-container {
-    height: 85vh;
-    margin-top: 15vh;
+    height: 85%;
+    margin-top: 15%;
     --card-width: 300px;
     padding: 10px;
     display: grid;
@@ -469,12 +477,12 @@
   }
 
   .shopping-basket-background {
-    height: 100vh;
+    height: 100%;
   }
 
   .shopping-basket {
-    --shopping-basket-width: 50vw;
-    --shopping-basket-height: 85vh;
+    --shopping-basket-width: 50%;
+    --shopping-basket-height: 85%;
   }
 
   .shopping-basket h1 {
