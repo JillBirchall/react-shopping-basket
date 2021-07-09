@@ -17,19 +17,20 @@
 }
 
 .main-container {
+  position: fixed;
   height: 100%;
   width: 100%;
   background: url("images/background-blurred.jpg");
   background-size: cover;
   position: relative;
   text-transform: uppercase;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /* Header */
 
 .nav-bar {
-  height: 10vh;
+  height: 10%;
   width: 100%;
   background-color: var(--primary-colour);
   display: flex;
