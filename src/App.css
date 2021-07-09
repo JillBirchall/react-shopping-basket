@@ -198,7 +198,7 @@
   background-color: black;
   background-color: rgba(0, 0, 0, 0.8);
   bottom: 0;
-  left: 0;
+  right: 0;
   display: none;
   position: fixed;
 }
@@ -225,14 +225,18 @@
   z-index: 2;
   background-color: white;
   position: fixed;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   font-family: var(--main-font);
-  transform: translateY(calc(var(--shopping-basket-height) * -1));
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
   transition: transform 0.5s linear;
   -webkit-transition: transform 0.5s linear;
   -moz-transition: transform 0.5s linear;
@@ -241,11 +245,12 @@
 }
 
 .show-shopping-basket {
-  transform: translateY(calc(100% - var(--shopping-basket-height)));
-  -webkit-transform: translateY(calc(100% - var(--shopping-basket-height)));
-  -moz-transform: translateY(calc(100% - var(--shopping-basket-height)));
-  -ms-transform: translateY(calc(100% - var(--shopping-basket-height)));
-  -o-transform: translateY(calc(100% - var(--shopping-basket-height)));
+  --shopping-basket-offset: calc(((1 / 9) * 100) * 1%);
+  transform: translateY(var(--shopping-basket-offset));
+  -webkit-transform: translateY(var(--shopping-basket-offset));
+  -moz-transform: translateY(var(--shopping-basket-offset));
+  -ms-transform: translateY(var(--shopping-basket-offset));
+  -o-transform: translateY(var(--shopping-basket-offset));
 }
 
 .shopping-basket h1 {
@@ -483,6 +488,10 @@
   .shopping-basket {
     --shopping-basket-width: 50%;
     --shopping-basket-height: 85%;
+  }
+
+  .show-shopping-basket {
+    --shopping-basket-offset: calc(((3 / 17) * 100) * 1%);
   }
 
   .shopping-basket h1 {
