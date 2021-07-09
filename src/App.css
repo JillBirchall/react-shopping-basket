@@ -460,8 +460,8 @@
   }
 
   .item-container {
-    height: 85%;
-    margin-top: 15%;
+    height: 85vh;
+    margin-top: 15vh;
     --card-width: 300px;
     padding: 10px;
     display: grid;
