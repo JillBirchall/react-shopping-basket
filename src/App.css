@@ -387,10 +387,10 @@
   }
 
   /* Workaround to add margin to the bottom of the grid */
-  /* .item-container:after {
+  .item-container:after {
     content: "";
     height: 10px;
-  } */
+  }
 
   .item-card {
     height: 360px;
@@ -472,10 +472,10 @@
   }
 
   /* Workaround to add margin to the bottom of the grid */
-  /* .item-container:after {
+  .item-container:after {
     content: "";
     height: 20px;
-  } */
+  }
 
   .item-card {
     width: var(--card-width);
