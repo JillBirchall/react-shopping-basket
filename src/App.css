@@ -314,6 +314,7 @@
   background-color: transparent;
   font-family: var(--secondary-font);
   font-size: 14px;
+  margin-top: 5px;
 }
 
 .item-subtotal {
