@@ -2,10 +2,10 @@
   --primary-colour: #f570ff;
   --secondary-colour: #a300ff;
   --tertiary-colour: #650062;
-  --title-font: "Tulpen One", sans-serif;
-  --main-font: "Saira Extra Condensed", sans-serif;
-  --secondary-font: "Open Sans", sans-serif;
-  --tertiary-font: Verdana, Geneva, Tahoma, sans-serif;
+  --title-font: "Tulpen One", "Brush Script MT", cursive;
+  --main-font: "Saira Extra Condensed", Impact, fantasy;
+  --secondary-font: "Open Sans", Arial, sans-serif;
+  --tertiary-font: Verdana, Tahoma, sans-serif;
 }
 
 *,
