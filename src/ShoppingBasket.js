@@ -4,12 +4,8 @@ import { ShoppingBasketItemContainer } from "./ShoppingBasketItemContainer";
 import formatToCurrency from "./utils";
 
 export const ShoppingBasket = ({ toggleBasket }) => {
-  const {
-    total,
-    numberOfItems,
-    isShoppingBasketOpen,
-    toggleShoppingBasket,
-  } = useGlobalContext();
+  const { total, numberOfItems, isShoppingBasketOpen, toggleShoppingBasket } =
+    useGlobalContext();
 
   return (
     <>
@@ -19,6 +15,7 @@ export const ShoppingBasket = ({ toggleBasket }) => {
             ? "shopping-basket-background show-shopping-basket-background"
             : "shopping-basket-background"
         }`}
+        data-testid="shopping basket background"
         onClick={toggleShoppingBasket}
       ></div>
       <div
@@ -27,6 +24,7 @@ export const ShoppingBasket = ({ toggleBasket }) => {
             ? "shopping-basket show-shopping-basket"
             : "shopping-basket"
         }`}
+        data-testid="shopping basket"
       >
         <h1>Shopping Basket</h1>
         {numberOfItems > 0 ? (

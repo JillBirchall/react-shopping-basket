@@ -155,12 +155,15 @@
 .add-to-basket-btn {
   background-color: var(--secondary-colour);
   color: white;
+  border: none;
   width: 100px;
   height: 30px;
   text-align: center;
   border-radius: 5px;
   font-size: 16px;
   line-height: 30px;
+  font-family: var(--main-font);
+  text-transform: uppercase;
 }
 
 .item-quantity-btns {

@@ -21,21 +21,29 @@ export const ItemCard = ({ name, price, image, description, quantity }) => {
           <p className="item-description">{description}</p>
           {quantity > 0 ? (
             <div className="item-quantity-btns">
-              <button className="item-qty-btn" onClick={() => decrement(name)}>
+              <button
+                className="item-qty-btn"
+                aria-label="decrement"
+                onClick={() => decrement(name)}
+              >
                 &#8722;
               </button>
               <div className="item-qty-text">{quantity || 0}</div>
-              <button className="item-qty-btn" onClick={() => increment(name)}>
+              <button
+                className="item-qty-btn"
+                aria-label="increment"
+                onClick={() => increment(name)}
+              >
                 &#43;
               </button>
             </div>
           ) : (
-            <div
+            <button
               className="add-to-basket-btn"
               onClick={() => addItem(name, price)}
             >
               Add To Basket
-            </div>
+            </button>
           )}
         </div>
       </div>

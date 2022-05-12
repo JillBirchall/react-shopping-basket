@@ -15,7 +15,12 @@ export const NavBar = () => {
           aria-label="Shopping Basket"
         >
           <img src={CakeIcon} alt="cake" className="cake-icon" />
-          <div className="shopping-basket-notification">{numberOfItems}</div>
+          <div
+            className="shopping-basket-notification"
+            data-testid="number of items in basket"
+          >
+            {numberOfItems}
+          </div>
         </button>
       </div>
     </nav>
